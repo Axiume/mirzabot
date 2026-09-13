@@ -4684,13 +4684,6 @@ if ($user['step'] == "createusertest" || preg_match('/locationtest_(.*)/', $data
     step('get_step_payment', $from_id);
 } elseif ($user['step'] == "get_step_payment") {
     if ($datain == "cart_to_offline") {
-        $checkpay = $pdo->prepare("SELECT * FROM Payment_report WHERE id_user = :user_id AND payment_Status = 'waiting'");
-        $checkpay->bindValue(':user_id', $from_id, PDO::PARAM_STR);
-        $checkpay->execute();
-        if (($checkpay)->rowCount() != 0) {
-            sendmessage($from_id, $textbotlang['users']['Balance']['pendingPayment'], null, 'HTML');
-            return;
-        }
         $mainbalance = select("PaySetting", "ValuePay", "NamePay", "minbalancecart", "select")['ValuePay'];
         $maxbalance = select("PaySetting", "ValuePay", "NamePay", "maxbalancecart", "select")['ValuePay'];
         if ($user['Processing_value'] < $mainbalance || $user['Processing_value'] > $maxbalance) {

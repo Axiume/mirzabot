@@ -253,7 +253,6 @@ return [
                         'waiting' => '等待支付确认',
                         'zarinpal' => '❌ 错误 
     通过此网关支付的最低金额为 5000 托曼。',
-                        'pendingPayment' => '❌ 您有一笔未确认的支付。请等待上一笔支付审核完毕，然后再发送新支付',
                         'cardEnabledNotice' => '💳 尊敬的用户，卡号已为您激活；现在您可以进行购买。',
                         'cardInstructionAlt' => '如需付款，请将金额存入下方卡号',
                         'giftDepositAlt' => '🎁 尊敬的用户，%s 托曼已作为礼物存入您的账户。',

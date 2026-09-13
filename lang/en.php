@@ -253,7 +253,6 @@ To enable it, the bot owner needs a Telegram Premium subscription, or the bot mu
                         'waiting' => 'Awaiting payment confirmation',
                         'zarinpal' => '❌ Error 
     The minimum amount for payment via this gateway is 5000 Toman.',
-                        'pendingPayment' => '❌ You have an unconfirmed payment. Please wait until the previous payment is reviewed, then send the new payment',
                         'cardEnabledNotice' => '💳 Dear user, the card number has been activated for you; you can now make your purchase.',
                         'cardInstructionAlt' => 'To pay, deposit the amount to the card number below',
                         'giftDepositAlt' => '🎁 Dear user, the amount of %s Toman has been deposited into your account as a gift.',
